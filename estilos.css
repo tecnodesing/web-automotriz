@@ -1,0 +1,119 @@
+/* ******* GENERALES ****** */
+
+:root{
+    --color-primario:#13a8fe;
+    --color-primario-oscuro:#0371b0;
+    --color-secundario: #ff00ff;
+    --color-terciario: #ffa300;
+    --color-adicional: #cf0060;
+    --color-fondo: #000045;
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --color-gris-oscuro: #414141;            
+}
+
+@font-face {
+    font-family: 'MuseoModerno';
+    src: url(fonts/MuseoModerno/MuseoModerno-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Codystar';
+    src: url(fonts/Codystar/Codystar-Regular.ttf);
+}
+@font-face {
+    font-family: 'cube';
+    src: url(fonts/cube/Cube.ttf);
+}
+@font-face {
+    font-family: 'neon';
+    src: url(fonts/neon/Neon.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoModerno';
+}
+
+/* ******* CONTENEDOR ****** */
+
+section{
+    height: calc(100vh - 50px);
+    background: url(img/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ******* MENU ****** */
+
+ul{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+ul li{
+    float: left;
+    width: 20%;
+    height: 100%;
+    list-style: none;
+    mix-blend-mode: hue;
+}
+
+ul:hover li{
+    opacity: 0;
+}
+
+ul li:hover{
+    opacity: 1;
+}
+
+
+/*? ******* COLORES DEL MENÚ ****** */
+
+ul li:nth-child(1){
+    background: var(--color-adicional);
+}
+
+ul li:nth-child(2){
+    background: var(--color-fondo);
+}
+
+ul li:nth-child(3){
+    background: var(--color-primario);
+}
+
+ul li:nth-child(4){
+    background: var(--color-secundario);
+}
+
+ul li:nth-child(5){
+    background: var(--color-terciario);
+}
+
+
+/*? ******* HOVER DE MENU ****** */
+
+
+ul li:hover:nth-child(1){
+    box-shadow:0 0 0 1500px var(--color-adicional);
+}
+
+ul li:hover:nth-child(2){
+    box-shadow:0 0 0 1500px var(--color-fondo);
+}
+
+ul li:hover:nth-child(3){
+    box-shadow:0 0 0 1500px var(--color-primario);
+}
+
+ul li:hover:nth-child(4){
+    box-shadow:0 0 0 1500px var(--color-secundario);
+}
+
+ul li:hover:nth-child(5){
+    box-shadow:0 0 0 1500px var(--color-terciario);
+}
